@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSV UPLOADER</title>
+</head>
+<body>
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="file" name="csv_file">
+    <input type="Submit" value="Add To DB">
+</form>
+</body>
+</html>
